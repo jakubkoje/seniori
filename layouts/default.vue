@@ -10,8 +10,14 @@
             <i-nav-item to="/navody">
               Návody
             </i-nav-item>
-            <i-nav-item to="/o-nas">
+            <i-nav-item to="/o-nas" class="fake">
               O projekte
+            </i-nav-item>
+            <i-nav-item style="font-size: calc(var(--font-size) * 1.5)" @click="increaseFontsize">
+              A<sup>+</sup>
+            </i-nav-item>
+            <i-nav-item @click="decreaseFontsize">
+              A<sup>-</sup>
             </i-nav-item>
           </i-nav>
 
@@ -33,6 +39,22 @@
     </i-layout-footer>
   </i-layout>
 </template>
+
+<script lang="ts" setup>
+const increaseFontsize = () => {
+  const root = getComputedStyle(document.documentElement)
+  const currentSize = parseFloat(root.getPropertyValue('--font-size'))
+  console.log(currentSize)
+  document.documentElement.style.setProperty('--font-size', `${currentSize + 0.1}rem`)
+}
+
+const decreaseFontsize = () => {
+  const root = getComputedStyle(document.documentElement)
+  const currentSize = parseFloat(root.getPropertyValue('--font-size'))
+  console.log(currentSize)
+  document.documentElement.style.setProperty('--font-size', `${currentSize - 0.1}rem`)
+}
+</script>
 
 <style lang="scss" scoped>
 .router-link-exact-active {

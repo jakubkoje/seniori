@@ -3,13 +3,7 @@
     <i-header id="cover-header" cover class="_text-align:center _color:white">
       <h1>S&M Online</h1>
       <p>Naučme sa nebáť na internete</p>
-      <i-input v-model="searchInput" placeholder="Spýtajte sa niečo..." size="lg">
-        <template #append>
-          <i-button color="success">
-            Vyhľadať
-          </i-button>
-        </template>
-      </i-input>
+      <tutorial-searchbar />
     </i-header>
     <i-container class="_margin-top:1">
       <i-row class="_margin-bottom:2">
@@ -20,7 +14,7 @@
             </template>
             <div class="_display:flex _justify-content:space-between">
               <p>Neviete kde začať? Kliknite sem a prevedieme Vás.</p>
-              <i-button to="/navody/1/1" outline color="light">
+              <i-button to="/navody/1/1" outline color="light" class="fake">
                 Poďme na to
               </i-button>
             </div>
@@ -39,62 +33,30 @@
       </i-row>
       <i-row middle center class="_margin-bottom:1 _margin-top:2">
         <i-column>
-          <i-button to="/o-nas" color="primary" size="lg">
+          <i-button to="/o-nas" color="primary" size="lg" class="fake">
             Zistiť viac
           </i-button>
         </i-column>
       </i-row>
       <i-row middle center>
         <i-column xs="12">
-          <h1 class="_margin-bottom:2">
+          <h2 class="_margin-bottom:2">
             Vybrané návody
-          </h1>
+          </h2>
         </i-column>
-        <i-column xs="12" md="6" lg="4">
-          <i-card>
+        <i-column v-for="tutorial in tutorials.slice(0,3)" :key="tutorial.id" xs="12" md="6" lg="4">
+          <i-card @click="$router.push(`/navody/${tutorial.category}/${tutorial.slug}`)">
             <template #image>
-              <img src="~/assets/images/public-transport.jpg" alt="Card Image" class="card-image">
+              <img :src="tutorial.image" alt="Card Image" class="card-image">
             </template>
             <h4 class="card-title">
-              Ako nájsť čas odchodu autobusu
+              {{ tutorial.title }}
             </h4>
             <p class="card-subtitle">
-              cp.hnonline.sk
+              {{ tutorial.author }}
             </p>
             <p>
-              Some quick example text to build on the card title and make up the bulk of the card's content.
-            </p>
-          </i-card>
-        </i-column>
-        <i-column xs="12" md="6" lg="4">
-          <i-card>
-            <template #image>
-              <img src="~/assets/images/electricity-bills.jpg" alt="Card Image" class="card-image">
-            </template>
-            <h4 class="card-title">
-              Ako spraviť odpočet elektriny cez aplikáciu
-            </h4>
-            <p class="card-subtitle">
-              Západoslovenská distribučná
-            </p>
-            <p>
-              Some quick example text to build on the card title and make up the bulk of the card's content.
-            </p>
-          </i-card>
-        </i-column>
-        <i-column xs="12" md="6" lg="4">
-          <i-card>
-            <template #image>
-              <img src="~/assets/images/cooking.jpg" alt="Card Image" class="card-image">
-            </template>
-            <h4 class="card-title">
-              Ako si nájsť recepty na internete
-            </h4>
-            <p class="card-subtitle">
-              MIRRI
-            </p>
-            <p>
-              Some quick example text to build on the card title and make up the bulk of the card's content.
+              {{ tutorial.summary }}
             </p>
           </i-card>
         </i-column>
@@ -111,8 +73,7 @@
 </template>
 
 <script setup lang="ts">
-
-const searchInput = useState('searchInput', () => '')
+const tutorials = useTutorials()
 </script>
 
 <style lang="scss" scoped>

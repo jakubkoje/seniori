@@ -12,6 +12,7 @@
     --color--primary--h: 195deg;
     --color--primary--s: 77%;
     --color--primary--l: 39%;
+    --font-size: 1rem;
 }
 
 header.header {
@@ -30,4 +31,15 @@ header.header {
 .card:hover {
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fake {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: default;
+}
+
 </style>

@@ -3,44 +3,26 @@
     <i-header id="cover-header" cover class="_text-align:center _color:white _background:primary">
       <h1>Návody</h1>
       <p>Potrebujete s niečím pomôcť? Skúste vyhľadať Váš problém:</p>
-      <i-input v-model="searchInput" placeholder="Spýtajte sa niečo..." size="lg">
-        <template #append>
-          <i-button color="success">
-            Vyhľadať
-          </i-button>
-        </template>
-      </i-input>
+      <tutorial-searchbar />
     </i-header>
     <i-container class="_margin-bottom:5">
-      <i-row>
-        <i-column>
-          <i-breadcrumb class="_margin-top:2">
-            <i-breadcrumb-item to="/navody">
-              Kategórie
-            </i-breadcrumb-item>
-            <i-breadcrumb-item active :to="`/navody/${currentCategory.slug}`">
-              {{ currentCategory.title }}
-            </i-breadcrumb-item>
-          </i-breadcrumb>
-        </i-column>
-      </i-row>
       <i-row class="_margin-bottom:1">
         <i-column>
-          <h2 class="_margin-top:0">
-            {{ currentCategory.title }}
+          <h2 class="">
+            Výsledky vyhľadávania pre: {{ searchInput }}
           </h2>
         </i-column>
       </i-row>
-      <i-row v-if="categoryTutorials.length" middle center>
+      <i-row v-if="searchResults.length" middle center>
         <i-column
-          v-for="tutorial in categoryTutorials"
+          v-for="tutorial in searchResults"
           :key="tutorial.id"
           xs="12"
           md="6"
           lg="4"
           xl="3"
         >
-          <i-card @click="router.push(`/navody/${currentCategory.slug}/${tutorial.slug}`)">
+          <i-card @click="router.push(`/navody/${tutorial.category}/${tutorial.slug}`)">
             <template #image>
               <img :src="tutorial.image" alt="Card Image" class="card-image">
             </template>
@@ -56,7 +38,7 @@
           </i-card>
         </i-column>
       </i-row>
-      <i-row v-else center middle>
+      <i-row v-else middle center>
         <i-column>
           <not-found />
         </i-column>
@@ -68,9 +50,12 @@
 <script lang="ts" setup>
 const route = useRoute()
 const router = useRouter()
-const searchInput = useState('searchInput', () => '')
-const categories = useCategories()
-const currentCategory = categories.value.find(category => category.slug === route.params.category)
 const tutorials = useTutorials()
-const categoryTutorials = tutorials.value.filter(tutorial => tutorial.category === currentCategory.slug)
+
+const searchInput = computed(() => decodeURI(route.query.q as string))
+
+const searchResults = computed(() => {
+  return tutorials.value.filter(tutorial => tutorial.title.toLowerCase().includes(searchInput.value.toLowerCase()))
+})
+
 </script>
