@@ -6,7 +6,7 @@
       :style="`background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${currentTutorial.image});`"
     >
       <h1>Ako nájsť čas odchodu autobusu</h1>
-      <h4>Vytvorené v spolupráci s cp.hnonline.sk</h4>
+      <h4>Vytvorené v spolupráci s {{ currentTutorial.author }}</h4>
     </i-header>
     <i-container class="_margin-bottom:3">
       <i-row>
@@ -25,7 +25,7 @@
         </i-column>
       </i-row>
       <i-row>
-        <i-column xs="8">
+        <i-column v-if="currentTutorial.content.length" xs="8">
           <div v-for="content in currentTutorial.content" :id="content.slug" :key="content.id">
             <div v-if="content.type === 'paragraph'">
               <h2 class="_margin-top:0">
@@ -46,6 +46,9 @@
               </ol>
             </div>
           </div>
+        </i-column>
+        <i-column v-else xs="8">
+          <not-found text="Tento návod je zatiaľ prázdny." />
         </i-column>
         <i-column xs="4">
           <i-list-group>
