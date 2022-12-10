@@ -89,15 +89,18 @@ export const useTutorials = () => {
       recommended: [
         {
           id: 1,
-          url: 'https://cp.hnonline.sk/'
+          url: 'https://cp.hnonline.sk/',
+          img_url: 'https://cp.hnonline.sk/Portal/MAFRASK/Part/Img/logo-192x192.png'
         },
         {
           id: 2,
-          url: 'https://imhd.sk/'
+          url: 'https://imhd.sk/',
+          img_url: 'https://pbs.twimg.com/profile_images/1258132950966648833/Y_O47XCh_400x400.jpg'
         },
         {
           id: 3,
-          url: 'https://www.arriva.sk/'
+          url: 'https://www.arriva.sk/',
+          img_url: 'https://play-lh.googleusercontent.com/8X_oMEeL66WOKhLYhInEROjFpSCFWyrXpjcHNr1Ed1zkgLZ1Ia-2sgT-p0zLcq8V2kAv=w480-h960-rw'
         }
       ]
     },

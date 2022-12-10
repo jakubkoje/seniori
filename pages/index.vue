@@ -4,9 +4,7 @@
       <h1>S&M Online</h1>
       <p>Naučme sa nebáť na internete</p>
       <tutorial-searchbar />
-    </i-header>
-    <i-container class="_margin-top:1">
-      <i-row class="_margin-bottom:2">
+      <i-row style="margin-top: 3rem" class="_margin-bottom:2">
         <i-column>
           <i-alert size="lg" color="info" to="/navody">
             <template #icon>
@@ -21,6 +19,8 @@
           </i-alert>
         </i-column>
       </i-row>
+    </i-header>
+    <i-container class="_margin-top:6">
       <i-row middle>
         <i-column xs="12" md="6">
           <div class="_padding-x:4">
@@ -45,7 +45,7 @@
           </h2>
         </i-column>
         <i-column v-for="tutorial in tutorials.slice(0,3)" :key="tutorial.id" xs="12" md="6" lg="4">
-          <i-card @click="$router.push(`/navody/${tutorial.category}/${tutorial.slug}`)">
+          <i-card class="card-y" @click="$router.push(`/navody/${tutorial.category}/${tutorial.slug}`)">
             <template #image>
               <img :src="tutorial.image" alt="Card Image" class="card-image">
             </template>
@@ -79,5 +79,6 @@ const tutorials = useTutorials()
 <style lang="scss" scoped>
 #cover-header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://inkline.io/assets/moonlight.a60c7cc7.jpg');
+  height: calc(500px + 100px);
 }
 </style>
