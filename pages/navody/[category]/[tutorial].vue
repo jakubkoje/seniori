@@ -87,7 +87,10 @@
               Odporúčané aplikácie
             </i-list-group-item>
             <i-list-group-item v-for="recommended in currentTutorial.recommended" :key="recommended.id">
-              <a :href="recommended.url">{{ recommended.url }}</a>
+              <div class="recommended-wraper">
+                <img :src="recommended.img_url">
+                <a :href="recommended.url">{{ recommended.url }}</a>
+              </div>
             </i-list-group-item>
           </i-list-group>
         </i-column>
@@ -111,4 +114,12 @@ useHead({
 </script>
 
 <style lang="scss" scoped>
+.recommended-wraper {
+  display: flex;
+
+  img {
+    width: 36px;
+    margin-right: 0.5rem;
+  }
+}
 </style>

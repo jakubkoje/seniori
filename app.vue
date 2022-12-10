@@ -42,4 +42,7 @@ html {
   cursor: default;
 }
 
+.card-y {
+  margin: 1rem 0;
+}
 </style>

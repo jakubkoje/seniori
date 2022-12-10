@@ -13,7 +13,7 @@
           </div>
         </i-navbar-brand>
         <i-navbar-collapsible>
-          <i-nav>
+          <i-nav class="nav">
             <i-nav-item to="/navody">
               Návody
             </i-nav-item>
@@ -66,5 +66,9 @@ const decreaseFontsize = () => {
 <style lang="scss" scoped>
 .router-link-exact-active {
   font-weight: bold;
+}
+
+.nav {
+  cursor: pointer;
 }
 </style>
