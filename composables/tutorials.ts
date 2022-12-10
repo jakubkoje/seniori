@@ -14,20 +14,29 @@ export const useTutorials = () => {
           type: 'paragraph',
           title: 'Úvod',
           slug: 'uvod',
-          text: 'If you\'re an older person who wants to learn how to check the departure times of buses on the internet, this tutorial is for you. Using the internet to check bus schedules can be a convenient and easy way to plan your trips and make sure you get where you need to go on time. Here\'s a step-by-step guide on how to do it:'
+          text: 'V tomto návode Vám ukážeme, ako si nájsť odchod autobusu, aby ste vedeli kedy vyraziť na cestu. Vďaka internetu je to veľmi rýchle a jednoduché. Po trocha tréningu to zvládnete za pár minút.'
         },
         {
           id: 2,
           type: 'ordered-list',
-          title: 'Všeobecný postup',
+          title: 'Postup pre imhd.sk',
+          slug: 'postup-pre-imhd-sk',
+          text: [
+            'Najprv si otvoríte vo svojom prehliadači nové okno, následne do miesta vyhľadávania zadáte – imhd.sk',
+            'Vľavo hore si vyberiete mesto v ktorom sa nachádzate.',
+            'V strede stránky uvidíte text – Kam chcete cestovať? Pod týmto textom máte dve kolonky. Pýtajú sa vás tam na začiatok cesty a cieľ cesty. Zadáte tam vašu počiatočnú zástavku a konečnú zástavku. ',
+            'Teraz máte na výber z dvoch možností, buď stlačíte ENTER, alebo jednoducho kliknete na lupu, ktorá symbolizuje vyhľadaj.',
+            'Vyhľadá vám to jednotlivé spojenia, vďaka ktorým sa dokážete dostať na cieľ cesty.',
+            'Viete si jednoducho pozrieť čas odchod autobusu zo zastávky, a rovnako aj čas príchodu autobusu do cieľovej destinácie.'
+          ]
+        },
+        {
+          id: 4,
+          type: 'ordered-list',
+          title: 'Všeobečný postup',
           slug: 'vseobecny-postup',
           text: [
-            'Find the website of the transportation agency that operates the buses in your area. This information should be available on their official website, which you can find by doing a quick internet search. The website will likely have a domain name that includes the name of the agency, such as "citytransit.com" or "countybus.org".\n',
-            'Once you\'ve found the website, look for a section that is dedicated to schedules or departure times. This section should have a list of all the routes that the agency operates, along with the corresponding departure times. The section may be labeled as "Schedules", "Departure Times", or something similar.\n',
-            'Select the route and the specific stop you want to check to see the departure times for that route and stop. To do this, you\'ll need to know the route number or name, as well as the name or location of the stop you want to check. This information should be available on the website or on signs at the bus stop.\n',
-            'If you\'re not sure which route to choose or which stop to select, you can use the website\'s search function to find the information you need. Simply enter the name of the route or stop you\'re looking for, and the website will provide you with the information you need. Some websites may also have a map or list of stops that you can use to find the information you need.\n',
-            'Once you\'ve selected the route and stop, the website will display a list of the upcoming departure times for that route and stop. This information will be displayed in a table or schedule format, with the times listed in chronological order. The times may be listed in military time (using a 24-hour clock) or in a standard 12-hour format.\n',
-            'Some websites may also offer additional features, such as the ability to set reminders or alerts for when the bus is about to arrive. This can be a great way to make sure you don\'t miss your bus, especially if you\'re not used to using public transportation. To set a reminder or alert, you\'ll need to create an account on the website and provide your contact information.\n'
+            'Už čoskoro...'
           ]
         },
         {
@@ -35,7 +44,7 @@ export const useTutorials = () => {
           type: 'paragraph',
           title: 'Záver',
           slug: 'zaver',
-          text: 'By following these steps, you can easily check the departure times of buses on the internet and plan your trips with confidence. This can be a great way to make the most of your public transportation options and get where you need to go with ease.'
+          text: 'Tento postup môže byť skvelý spôsob, ako čo najlepšie využiť možnosti verejnej dopravy a ľahko sa dostať tam, kam potrebujete. V pravo nájdete zopár stránok, na ktorých si to viete vyskúšať'
         },
         {
           id: 4,
@@ -59,33 +68,19 @@ export const useTutorials = () => {
               ]
             },
             {
-              id: 1,
-              question: 'Kedy ide prvá ranná električka číslo 9 zo zastávky Poštová smer Ružinov cez pracovné dni?',
+              id: 2,
+              question: 'V akom intervale chodí autobus číslo 94 o 8. ráno?',
               answer: '',
               answered: false,
               answers: [
-                '4:23',
-                '04:23',
-                '423',
-                '4 23',
-                '4-23',
-                '4.23',
-                '4,23'
-              ]
-            },
-            {
-              id: 1,
-              question: 'Kedy ide prvá ranná električka číslo 9 zo zastávky Poštová smer Ružinov cez pracovné dni?',
-              answer: '',
-              answered: false,
-              answers: [
-                '4:23',
-                '04:23',
-                '423',
-                '4 23',
-                '4-23',
-                '4.23',
-                '4,23'
+                '4',
+                '4 minuty',
+                'kazde 4 minuty',
+                'styri',
+                'štyri',
+                'každé 4 minúty',
+                'kazde styri minuty',
+                'kazde štyri minúty'
               ]
             }
           ]

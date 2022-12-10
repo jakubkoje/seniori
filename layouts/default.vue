@@ -41,7 +41,7 @@
     </i-layout-content>
     <i-layout-footer>
       <div class="_background:gray-70 _color:white _padding:1 _text:center">
-        <p>S láskou pre Vás vytvoril tím <strong>Pucwoll</strong></p>
+        <p>Vytvorené cez hackathon.</p>
       </div>
     </i-layout-footer>
   </i-layout>
