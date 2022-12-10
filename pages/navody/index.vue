@@ -24,7 +24,7 @@
       <i-row>
         <i-column>
           <i-breadcrumb class="_margin-top:2">
-            <i-breadcrumb-item active to="/navody">
+            <i-breadcrumb-item active to="/navody" @click="$router.push('/navody')">
               Kategórie
             </i-breadcrumb-item>
           </i-breadcrumb>
@@ -54,7 +54,7 @@
               </h4>
             </template>
 
-            Some quick example text to build on the card title and make up the bulk of the card's content.
+            Krátky text o kategorií
           </i-card>
         </i-column>
       </i-row>
@@ -69,6 +69,9 @@
 
 <script lang="ts" setup>
 const categories = useCategories()
+useHead({
+  title: 'Smelo | Návody'
+})
 </script>
 
 <style lang="scss" scoped>

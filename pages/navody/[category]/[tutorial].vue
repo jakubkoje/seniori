@@ -12,13 +12,13 @@
       <i-row>
         <i-column>
           <i-breadcrumb class="_margin-top:2">
-            <i-breadcrumb-item to="/navody">
+            <i-breadcrumb-item to="/navody" @click="$router.push('/navody')">
               Kategórie
             </i-breadcrumb-item>
-            <i-breadcrumb-item :to="`/navody/${currentCategory.slug}`">
+            <i-breadcrumb-item :to="`/navody/${currentCategory.slug}`" @click="$router.push(`/navody/${currentCategory.slug}`)">
               {{ currentCategory.title }}
             </i-breadcrumb-item>
-            <i-breadcrumb-item active :to="`/navody/${currentCategory.slug}/${currentTutorial.slug}`">
+            <i-breadcrumb-item active :to="`/navody/${currentCategory.slug}/${currentTutorial.slug}`" @click="$router.push(`/navody/${currentCategory.slug}/${currentTutorial.slug}`)">
               {{ currentTutorial.title }}
             </i-breadcrumb-item>
           </i-breadcrumb>
@@ -109,7 +109,7 @@ const tutorials = useTutorials()
 const currentTutorial = tutorials.value.find(tutorial => tutorial.slug === route.params.tutorial)
 
 useHead({
-  title: `Seniori | ${currentTutorial.title}`
+  title: `Smelo | ${currentTutorial.title}`
 })
 </script>
 
