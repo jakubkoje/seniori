@@ -8,6 +8,7 @@ export const useTutorials = () => {
       author: 'cp.hnonline.sk',
       image: 'https://images.unsplash.com/photo-1565557625275-27f409ad4639?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3693&q=80',
       summary: '',
+      fake: false,
       content: [
         {
           id: 1,
@@ -105,24 +106,26 @@ export const useTutorials = () => {
       ]
     },
     {
-      id: 1,
+      id: 2,
       title: 'Ako spraviť odpočet elektriny cez aplikáciu',
       slug: 'ako-spravit-odpocet-elektriny-cez-aplikaciu',
       category: 'financie',
       author: 'Západoslovenská distribučná',
       image: 'https://images.unsplash.com/photo-1663608786776-72e279f45a95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80',
       summary: '',
+      fake: true,
       content: [],
       recommended: []
     },
     {
-      id: 1,
+      id: 3,
       title: 'Ako si nájsť recepty na internete',
       slug: 'ako-si-najst-recepty-na-internete',
       category: 'volny-cas',
       author: 'MIRRI',
       image: 'https://images.unsplash.com/photo-1615224299941-04a854c101d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
       summary: '',
+      fake: true,
       content: [],
       recommended: []
     }

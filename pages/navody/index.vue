@@ -47,7 +47,7 @@
           lg="4"
           xl="3"
         >
-          <i-card @click="$router.push(`/navody/${category.slug}`)">
+          <i-card :class="category.fake ? 'fake' : ''" @click="$router.push(`/navody/${category.slug}`)">
             <template #header>
               <h4>
                 {{ category.title }}

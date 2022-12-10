@@ -22,7 +22,7 @@
           lg="4"
           xl="3"
         >
-          <i-card @click="router.push(`/navody/${tutorial.category}/${tutorial.slug}`)">
+          <i-card :class="tutorial.fake ? 'fake' : ''" @click="router.push(`/navody/${tutorial.category}/${tutorial.slug}`)">
             <template #image>
               <img :src="tutorial.image" alt="Card Image" class="card-image">
             </template>

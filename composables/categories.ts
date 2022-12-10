@@ -3,22 +3,26 @@ export const useCategories = () => {
     {
       id: 1,
       title: 'Doprava',
-      slug: 'doprava'
+      slug: 'doprava',
+      fake: false
     },
     {
       id: 2,
       title: 'Bezpečnost',
-      slug: 'bezpecnost'
+      slug: 'bezpecnost',
+      fake: true
     },
     {
       id: 3,
       title: 'Financie',
-      slug: 'financie'
+      slug: 'financie',
+      fake: true
     },
     {
       id: 4,
       title: 'Voľný čas',
-      slug: 'volny-cas'
+      slug: 'volny-cas',
+      fake: true
     }
   ])
 }

@@ -45,7 +45,7 @@
           </h2>
         </i-column>
         <i-column v-for="tutorial in tutorials.slice(0,3)" :key="tutorial.id" xs="12" md="6" lg="4">
-          <i-card class="card-y" @click="$router.push(`/navody/${tutorial.category}/${tutorial.slug}`)">
+          <i-card :class="tutorial.fake ? 'fake' : ''" class="card-y" @click="$router.push(`/navody/${tutorial.category}/${tutorial.slug}`)">
             <template #image>
               <img :src="tutorial.image" alt="Card Image" class="card-image">
             </template>
