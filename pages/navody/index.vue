@@ -54,7 +54,7 @@
               </h4>
             </template>
 
-            Krátky text o kategorií
+            Krátky text o kategórií
           </i-card>
         </i-column>
       </i-row>
