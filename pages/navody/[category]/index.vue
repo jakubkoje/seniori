@@ -15,10 +15,10 @@
       <i-row>
         <i-column>
           <i-breadcrumb class="_margin-top:2">
-            <i-breadcrumb-item to="/navody">
+            <i-breadcrumb-item :to="'/navody'" @click="$router.push('/navody')">
               Kategórie
             </i-breadcrumb-item>
-            <i-breadcrumb-item active :to="`/navody/${currentCategory.slug}`">
+            <i-breadcrumb-item active :to="`/navody/${currentCategory.slug}`" @click="$router.push(`/navody/${currentCategory.slug}`)">
               {{ currentCategory.title }}
             </i-breadcrumb-item>
           </i-breadcrumb>
@@ -50,9 +50,6 @@
             <p class="card-subtitle">
               {{ tutorial.author }}
             </p>
-            <p>
-              Some quick example text to build on the card title and make up the bulk of the card's content.
-            </p>
           </i-card>
         </i-column>
       </i-row>
@@ -73,4 +70,8 @@ const categories = useCategories()
 const currentCategory = categories.value.find(category => category.slug === route.params.category)
 const tutorials = useTutorials()
 const categoryTutorials = tutorials.value.filter(tutorial => tutorial.category === currentCategory.slug)
+
+useHead({
+  title: `Smelo | ${currentCategory.title}`
+})
 </script>

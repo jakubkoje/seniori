@@ -1,7 +1,7 @@
 <template>
   <div>
     <i-header id="cover-header" cover class="_text-align:center _color:white">
-      <h1>S&M Online</h1>
+      <h1>Smelo.online</h1>
       <p>Naučme sa nebáť na internete</p>
       <tutorial-searchbar />
       <i-row style="margin-top: 3rem" class="_margin-bottom:2">
@@ -54,9 +54,6 @@
             </h4>
             <p class="card-subtitle">
               {{ tutorial.author }}
-            </p>
-            <p>
-              {{ tutorial.summary }}
             </p>
           </i-card>
         </i-column>

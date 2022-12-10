@@ -32,9 +32,6 @@
             <p class="card-subtitle">
               {{ tutorial.author }}
             </p>
-            <p>
-              Some quick example text to build on the card title and make up the bulk of the card's content.
-            </p>
           </i-card>
         </i-column>
       </i-row>
@@ -56,6 +53,10 @@ const searchInput = computed(() => decodeURI(route.query.q as string))
 
 const searchResults = computed(() => {
   return tutorials.value.filter(tutorial => tutorial.title.toLowerCase().includes(searchInput.value.toLowerCase()))
+})
+
+useHead({
+  title: 'Smelo | Vyľadávanie'
 })
 
 </script>

@@ -9,6 +9,11 @@
   </div>
 </template>
 
+<script lang="ts" setup>
+useHead({
+  title: 'Smelo | O nás'
+})
+</script>
 <style lang="scss" scoped>
 header.margin-header {
   h1 {
