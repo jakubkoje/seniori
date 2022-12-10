@@ -29,7 +29,7 @@
           </i-nav>
 
           <i-nav-item>
-            <i-button color="primary" class="_width:100%">
+            <i-button color="primary" class="_width:100%" to="/rozsirenie">
               Stiahnuť rozšírenie
             </i-button>
           </i-nav-item>
