@@ -5,7 +5,7 @@
       class="_text-align:center _color:white _background:primary"
       :style="`background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${currentTutorial.image});`"
     >
-      <h1>Ako nájsť čas odchodu autobusu</h1>
+      <h1>{{ currentTutorial.title }}</h1>
       <h4>Vytvorené v spolupráci s {{ currentTutorial.author }}</h4>
     </i-header>
     <i-container class="_margin-bottom:3">
@@ -44,6 +44,29 @@
                   {{ item }}
                 </li>
               </ol>
+            </div>
+            <div v-if="content.type === 'questions'">
+              <h2>{{ content.title }}</h2>
+              <ul>
+                <li v-for="question in content.questions">
+                  <div>
+                    <p>{{ question.question }}</p>
+                    <i-input v-model="question.answer" placeholder="Zadajte odpoved..." @input="question.answered = false">
+                      <template #append>
+                        <i-button color="primary" @click="question.answered = true">
+                          Skontrolovať
+                        </i-button>
+                      </template>
+                    </i-input>
+                    <i-alert v-if="question.answered && question.answers.includes(question.answer)" class="_margin-y:1" color="success">
+                      Správna odpoveď.
+                    </i-alert>
+                    <i-alert v-if="question.answered && !question.answers.includes(question.answer)" class="_margin-y:1" color="warning">
+                      Nesprávna odpoveď.
+                    </i-alert>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </i-column>

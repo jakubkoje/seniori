@@ -8,7 +8,7 @@
     <i-container class="_margin-top:1">
       <i-row class="_margin-bottom:2">
         <i-column>
-          <i-alert color="info" to="/navody">
+          <i-alert size="lg" color="info" to="/navody">
             <template #icon>
               <i-icon name="ink-info" />
             </template>

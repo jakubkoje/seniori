@@ -36,6 +36,59 @@ export const useTutorials = () => {
           title: 'Záver',
           slug: 'zaver',
           text: 'By following these steps, you can easily check the departure times of buses on the internet and plan your trips with confidence. This can be a great way to make the most of your public transportation options and get where you need to go with ease.'
+        },
+        {
+          id: 4,
+          type: 'questions',
+          title: 'Úlohy',
+          slug: 'otazky',
+          questions: [
+            {
+              id: 1,
+              question: 'Kedy ide prvá ranná električka číslo 9 zo zastávky Poštová smer Ružinov cez pracovné dni?',
+              answer: '',
+              answered: false,
+              answers: [
+                '4:23',
+                '04:23',
+                '423',
+                '4 23',
+                '4-23',
+                '4.23',
+                '4,23'
+              ]
+            },
+            {
+              id: 1,
+              question: 'Kedy ide prvá ranná električka číslo 9 zo zastávky Poštová smer Ružinov cez pracovné dni?',
+              answer: '',
+              answered: false,
+              answers: [
+                '4:23',
+                '04:23',
+                '423',
+                '4 23',
+                '4-23',
+                '4.23',
+                '4,23'
+              ]
+            },
+            {
+              id: 1,
+              question: 'Kedy ide prvá ranná električka číslo 9 zo zastávky Poštová smer Ružinov cez pracovné dni?',
+              answer: '',
+              answered: false,
+              answers: [
+                '4:23',
+                '04:23',
+                '423',
+                '4 23',
+                '4-23',
+                '4.23',
+                '4,23'
+              ]
+            }
+          ]
         }
       ],
       recommended: [
