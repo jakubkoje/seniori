@@ -3,13 +3,7 @@
     <i-header id="cover-header" cover class="_text-align:center _color:white _background:primary">
       <h1>Návody</h1>
       <p>Potrebujete s niečím pomôcť? Skúste vyhľadať Váš problém:</p>
-      <i-input v-model="searchInput" placeholder="Spýtajte sa niečo..." size="lg">
-        <template #append>
-          <i-button color="success">
-            Vyhľadať
-          </i-button>
-        </template>
-      </i-input>
+      <tutorial-searchbar />
     </i-header>
     <i-container class="_margin-bottom:5">
       <i-row>
