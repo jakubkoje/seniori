@@ -3,7 +3,14 @@
     <i-layout-header>
       <i-navbar collapse="sm">
         <i-navbar-brand to="/">
-          S&M Online
+          <div class="_text:center">
+            <h4 class="_margin:0">
+              Smelo
+            </h4>
+            <h6 class="_margin:0">
+              online
+            </h6>
+          </div>
         </i-navbar-brand>
         <i-navbar-collapsible>
           <i-nav>

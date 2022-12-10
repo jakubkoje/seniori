@@ -3,9 +3,9 @@ export default defineNuxtConfig({
   modules: [
     '@inkline/nuxt'
   ],
-  // inkline: {
-  //   size: 'lg'
-  // },
+  inkline: {
+    size: 'lg'
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' },
