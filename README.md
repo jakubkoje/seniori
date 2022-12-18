@@ -1,16 +1,12 @@
-# Nuxt 3 Minimal Starter
+# Smelo.online
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Our entry for the Hackathon - [Seniori v digitálnom svete](https://www.hacknime.to/digitalni_seniori/). It was our first experience with Nuxt 3.
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install --shamefully-hoist
 ```
 
@@ -19,7 +15,7 @@ pnpm install --shamefully-hoist
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 ## Production
@@ -27,13 +23,13 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+pnpm build
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+pnpm preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
