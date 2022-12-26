@@ -1,5 +1,5 @@
 {
-  "name": "strapi",
+  "name": "cms",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -9,18 +9,18 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
+  "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-i18n": "4.5.4",
-    "@strapi/plugin-users-permissions": "4.5.4",
     "@strapi/strapi": "4.5.4",
-    "better-sqlite3": "7.4.6",
-    "pg": "^8.8.0"
+    "@strapi/plugin-users-permissions": "4.5.4",
+    "@strapi/plugin-i18n": "4.5.4",
+    "better-sqlite3": "7.4.6"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "dd2cc798-4b6b-4c1c-ad03-6318d5439348"
+    "uuid": "7f1b328e-0493-4764-9df1-2b24e20d4ff3"
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",
