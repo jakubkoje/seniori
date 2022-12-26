@@ -5,38 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6018739f-d9a9-4988-a552-11dc3cffe0b4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/config/admin.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/config/api.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/config/database.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/config/env/production/database.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/config/middlewares.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/config/server.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/database/migrations/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/public/uploads/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/src/admin/app.example.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/src/admin/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/src/admin/webpack.config.example.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/src/api/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/src/api/article/content-types/article/schema.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/src/api/article/controllers/article.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/src/api/article/routes/article.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/src/api/article/services/article.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/src/api/book/content-types/book/schema.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/src/api/book/controllers/book.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/src/api/book/routes/book.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/src/api/book/services/book.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/src/extensions/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/src/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/nuxt.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +82,7 @@
       <workItem from="1671917983667" duration="2159000" />
       <workItem from="1672053634466" duration="17000" />
       <workItem from="1672053718559" duration="6638000" />
+      <workItem from="1672079684445" duration="686000" />
     </task>
     <servers />
   </component>
