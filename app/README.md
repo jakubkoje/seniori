@@ -21,7 +21,7 @@ pnpm dev
 ## Production
 
 Build the application for production:
-Railway test
+Railway deployment
 
 ```bash
 pnpm build
